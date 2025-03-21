@@ -72,22 +72,25 @@ body {
     border: 2px solid black;
 }
 
-#buttonContainer button:hover {
+div#buttonContainer button:hover,
+div#buttonContainer button.operator:hover,
+div#buttonContainer button.clear:hover,
+div#buttonContainer button.equal:hover {
     background-color: yellow;
 }
 
-button#clearButton {
-    background-color: rgb(226, 56, 56);
+div#buttonContainer button.operator {
+    background-color: rgb(60, 179, 60);
 }
 
-button#equalsButton {
-    background-color: rgb(42, 185, 185);
+div#buttonContainer button.clear {
+    background-color: rgb(201, 94, 94);    
 }
 
-div#buttonContainer > button.operator {
-    background-color: rgb(87, 199, 87);
+div#buttonContainer button.equal {
+    background-color: rgb(78, 78, 219);
 }
 
-div#buttonContainer > button.operator:hover {
-    background-color: yellow;
+div#buttonContainer button.decimal {
+    align-self: left;
 }
