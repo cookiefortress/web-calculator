@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Consolas;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin: 20px;
+}
+
+#calcContainer {
+    width: 500px;
+    height: 700px;
+    background-color: grey;
+    padding: 20px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+#calcTop {
+    width: 350px;
+    font-size: 20px;
+    font-style: italic;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#solarPanel {
+    width: 100px;
+    height: 40px;
+    background-color: orange;
+    border: 3px solid brown;
+    border-radius: 2px;
+}
+
+#display {
+    width: 400px;
+    height: 100px;
+    background-color: black;
+    color: green;
+    font-size: 45px;
+
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+#buttonContainer {
+    width: 360px;
+    padding-top: 20px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#buttonContainer button {
+    font-size: 35px;
+    width: 80px;
+    height: 80px;
+    background-color:antiquewhite;
+    border: 2px solid black;
+}
+
+#buttonContainer button:hover {
+    background-color: yellow;
+}
+
+button#clearButton {
+    background-color: rgb(226, 56, 56);
+}
+
+button#equalsButton {
+    background-color: rgb(42, 185, 185);
+}
+
+div#buttonContainer > button.operator {
+    background-color: rgb(87, 199, 87);
+}
+
+div#buttonContainer > button.operator:hover {
+    background-color: yellow;
+}
